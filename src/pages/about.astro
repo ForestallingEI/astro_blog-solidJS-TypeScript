@@ -1,0 +1,11 @@
+---
+import FeedbackForm from "../components/FeedbackForm.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import "../styles/global.css";
+const pageTitle = "About Me";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <h2>Form Feature in Netlify</h2>
+  <FeedbackForm />
+</BaseLayout>

@@ -1,0 +1,49 @@
+---
+---
+
+<p>
+  Hear is a reference https://docs.netlify.com/forms/setup/   
+</p>
+<div class="feedback-form">
+  <form data-netlify="true" netlify-honeypot name="feedback" method="POST">
+    <p class="hidden">
+      <label>
+        Don't fill this out if you're human: <input name="bot-field" />
+      </label>
+    </p>
+    <input type="hidden" name="form-name" value="feedback" />
+    <label for="feedback">FeedBack Message</label>
+    <textarea id="feedback" wrap="soft" name="feedback" required></textarea>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<style>
+  .feedback-form {
+    min-width: 250px;
+    width: 100%;
+  }
+  input,
+  textarea,
+  button {
+    font-size: inherit;
+    margin: 15px 0;
+    padding: 12px 20px;
+    width: 100%;
+  }
+  button {
+    background-color: teal;
+    border: 1px solid black;
+    color: white;
+    width: 50%;
+  }
+  .hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+</style>

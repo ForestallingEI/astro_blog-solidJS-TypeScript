@@ -1,0 +1,21 @@
+---
+interface Props {
+  title: string;
+  pubDate: string;
+  url: string;
+}
+const { title, pubDate, url } = Astro.props;
+---
+
+<style>
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: rgb(6, 212, 16);
+    font-weight: 600;
+  }
+</style>
+
+<li><a href={url}>{pubDate} # {title}</a></li>

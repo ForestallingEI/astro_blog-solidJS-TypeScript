@@ -1,0 +1,23 @@
+---
+import Social from "./Social.astro";
+const today = new Date();
+---
+
+<style>
+  footer {
+    display: flex;
+    gap: 1rem;
+    margin-top: 5rem;
+  }
+  p {
+    text-align: center;
+    margin-top: 2vh;
+  }
+</style>
+
+<footer>
+  <Social platform="twitter" username="astrodotbuild" />
+  <Social platform="github" username="withastro" />
+  <Social platform="youtube" username="astrodotbuild" />
+</footer>
+<p>Copyright {today.getFullYear()} Kanrinin</p>
